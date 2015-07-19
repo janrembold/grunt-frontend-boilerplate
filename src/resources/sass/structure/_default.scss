@@ -1,0 +1,16 @@
+.container {
+  max-width: $max-width;
+}
+
+.double {
+  max-width: $max-width;
+}
+
+.triple {
+  max-width: $max-width;
+  padding: 20px;
+}
+
+.prefixer {
+  transform: rotateX(150deg);
+}

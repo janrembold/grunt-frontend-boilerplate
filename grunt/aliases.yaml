@@ -1,0 +1,28 @@
+default: []
+
+base:
+  - 'clean:dev'
+  - 'copy:dev'
+  - 'concurrent:compiles'
+  - 'autoprefixer'
+  - 'zetzer:server'
+  - 'concurrent:validations'
+
+serve:
+  - 'base'
+  - 'connect:dev'
+  - 'watch'
+
+prod:
+  - 'clean:prod'
+  - 'clean:tmp'
+  - 'base'
+  - 'copy:dist'
+  - 'copy:bower'
+  - 'modernizr'
+  - 'useminPrepare'
+  - 'concat:generated'
+  - 'cssmin:generated'
+  - 'uglify:generated'
+  - 'usemin'
+#  - 'cachebreaker'

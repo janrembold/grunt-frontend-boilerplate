@@ -1,0 +1,18 @@
+{
+  "name": "grunt-frontend-boilerplate",
+  "version": "0.0.0",
+  "authors": [
+    "Jan Rembold <janrembold@googlemail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}
