@@ -18,5 +18,5 @@
   "trailing": true,
   "smarttabs": true,
   "jquery": true,
-  "predef": ["jQuery", "Modernizr"]
+  "predef": ["jQuery", "Modernizr", "define", "FastClick"]
 }

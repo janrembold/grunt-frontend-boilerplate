@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    {{= it.include("meta/meta.default.html") }}
+
+    <title>{{= it.document.title }}</title>
+
+    {{= it.include("styles/styles.default.html") }}
+    {{= it.include("scripts/scripts.head.html") }}
+</head>
+<body>
+    <div class="offcanvas layout--default">
+        <div class="offcanvas__inner">
+            {{= it.include("modules/navigation/header.sticky.html") }}
+            <main class="content">
+                {{= it.document }}
+            </main>
+            <aside class="offcanvas__area offcanvas__area--left">LEFT OFFCANVAS</aside>
+            <aside class="offcanvas__area offcanvas__area--right">RIGHT OFFCANVAS</aside>
+            <a class="offcanvas__exit"></a>
+        </div>
+    </div>
+
+    {{= it.include("scripts/scripts.default.html") }}
+</body>
+</html>

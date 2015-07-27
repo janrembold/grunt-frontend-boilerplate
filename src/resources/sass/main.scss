@@ -1,2 +1,11 @@
-@import "_settings";
-@import "structure/_default";
+/* Global settings*/
+@import "settings";
+
+/* General mixins */
+@import "mixins/general";
+
+/* Layouts */
+@import "layouts/default";
+
+/* Components */
+@import "components/offcanvas";

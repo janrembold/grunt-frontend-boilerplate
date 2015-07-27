@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    {{= it.include("styles/styles.default.html") }}
+
     <title>{{= it.document.title }}</title>
 
     {{= it.include("styles/styles.default.html") }}
     {{= it.include("scripts/scripts.head.html") }}
 </head>
 <body>
-
-{{= it.document }}
-{{= it.include("scripts/scripts.default.html") }}
-
+    {{= it.document }}
+    {{= it.include("scripts/scripts.default.html") }}
 </body>
 </html>
