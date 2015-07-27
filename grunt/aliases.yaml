@@ -3,6 +3,7 @@ default: []
 base:
   - 'clean:dev'
   - 'copy:dev'
+  - 'copy:bower'
   - 'concurrent:compiles'
   - 'autoprefixer'
   - 'zetzer:server'

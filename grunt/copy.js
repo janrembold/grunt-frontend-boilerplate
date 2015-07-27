@@ -39,5 +39,15 @@ module.exports = {
                 expand: true
             }
         ]
+    },
+    js: {
+        files: [
+            {
+                cwd: '<%= config.src %>/',
+                dest: '<%= config.dev %>/',
+                src: ['resources/js/**'],
+                expand: true
+            }
+        ]
     }
 };

@@ -27,13 +27,13 @@ module.exports = {
             livereload: true
         }
     },
-    assets: {
-        files: ['<%= config.src %>/_assets/**'],
-        tasks: ['copy:assets'],
-        options: {
-            livereload: true
-        }
-    },
+    //assets: {
+    //    files: ['<%= config.src %>/_assets/**'],
+    //    tasks: ['copy:assets'],
+    //    options: {
+    //        livereload: true
+    //    }
+    //},
     bower: {
         files: ['<%= config.src %>/resources/bower/**'],
         tasks: ['copy:bower'],
@@ -53,7 +53,7 @@ module.exports = {
     },
     sass: {
         files: ['<%= config.src %>/resources/sass/**/*.scss'],
-        tasks: ['sass'],
+        tasks: ['sass', 'autoprefixer'],
         options: {
             livereload: true
         }
