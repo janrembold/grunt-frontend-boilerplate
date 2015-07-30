@@ -3,15 +3,21 @@ $offcanvas-area-z-index: 1001;
 $offcanvas-exit-z-index: 1002;
 $offcanvas-transition: transform 500ms ease 0s;
 
+/*
+* ToDo's
+* Styles for (min-)height: 100% or better 100vh
+*/
+
 .offcanvas {
     position: relative;
     width: 100%;
-    overflow: hidden;
     margin: 0 auto;
+    overflow: hidden;
 
     &__inner {
         position: relative;
         transition: $offcanvas-transition;
+        transform: translate3d(0,0,0);
     }
 
     &__area {
@@ -19,7 +25,6 @@ $offcanvas-transition: transform 500ms ease 0s;
         &--right {
             position: absolute;
             width: $offcanvas-area-width;
-            height: 100%;
             bottom: 0;
             top: 0;
             overflow-x: hidden;
@@ -55,6 +60,12 @@ $offcanvas-transition: transform 500ms ease 0s;
 
     &--show-left,
     &--show-right {
+        &.offcanvas--fixed-height {
+            > .offcanvas__inner {
+                height: 100vh;
+            }
+        }
+
         > .offcanvas__inner {
             > .offcanvas__exit {
                 display: block;
