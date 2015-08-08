@@ -41,12 +41,22 @@ module.exports = {
             livereload: true
         }
     },
-    zetzer: {
+    //zetzer: {
+    //    files: [
+    //        '<%= config.src %>/*.html',
+    //        '<%= config.src %>/_zetzer/**/*.html'
+    //    ],
+    //    tasks: ['zetzer'],
+    //    options: {
+    //        livereload: true
+    //    }
+    //},
+    assemble: {
         files: [
-            '<%= config.src %>/*.html',
-            '<%= config.src %>/_zetzer/**/*.html'
+            '<%= config.src %>/*.hbs',
+            '<%= config.src %>/_assemble/**/*.hbs'
         ],
-        tasks: ['zetzer'],
+        tasks: ['assemble', 'prettify'],
         options: {
             livereload: true
         }

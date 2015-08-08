@@ -7,7 +7,6 @@ module.exports = {
             livereload: true,
             middleware: function(connect) {
                 'use strict';
-
                 return [
                     connect.static('dev'),
                     connect.static('src')

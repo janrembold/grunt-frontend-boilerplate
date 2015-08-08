@@ -53,6 +53,8 @@ module.exports = function(grunt) {
                 tmp:  './.tmp',
                 // grunt configuration folder
                 grunt: './grunt',
+                // bower folder
+                bower: './src/resources/bower',
                 // handlebars folder
                 handlebars: './src/_handlebars',
                 // handlebars namespace - call precompiled template /general/layout.hbs with HBS['general.layout']

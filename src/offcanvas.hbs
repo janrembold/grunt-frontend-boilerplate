@@ -1,0 +1,14 @@
+---
+title: 'Offcanvas'
+layout: 'offcanvas.hbs'
+---
+
+<ul>
+    {{#each pages}}
+        {{#compare basename "!==" "_useminPrepare"}}
+            {{#data}}
+                <li><a href="{{../basename}}.html">{{title}}</a></li>
+            {{/data}}
+        {{/compare}}
+    {{/each}}
+</ul>
