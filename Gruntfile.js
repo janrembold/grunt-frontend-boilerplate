@@ -40,6 +40,7 @@ module.exports = function(grunt) {
 
     // load grunt configuration
     require('load-grunt-config')(grunt, {
+        jitGrunt: true,
         data: {
             pkg: grunt.file.readJSON('package.json'),
             config: {
