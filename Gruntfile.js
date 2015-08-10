@@ -45,19 +45,19 @@ module.exports = function(grunt) {
             pkg: grunt.file.readJSON('package.json'),
             config: {
                 // source folder
-                src:   './src',
+                src:   'src',
                 // development folder - all sources and compiled files go here (nothing minified)
-                dev:   './dev',
+                dev:   'dev',
                 // distribution folder - all minified and optimized sources go here
-                prod:  './dist',
+                prod:  'dist',
                 // temp folder for useminPrepare
-                tmp:  './.tmp',
+                tmp:  '.tmp',
                 // grunt configuration folder
-                grunt: './grunt',
+                grunt: 'grunt',
                 // bower folder
-                bower: './src/resources/bower',
+                bower: 'src/resources/bower',
                 // handlebars folder
-                handlebars: './src/_handlebars',
+                handlebars: 'src/_handlebars',
                 // handlebars namespace - call precompiled template /general/layout.hbs with HBS['general.layout']
                 handlebarsNamespace: 'HBS'
             }
