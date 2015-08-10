@@ -1,5 +1,5 @@
 module.exports = {
-    html: '<%= config.dev %>/_useminPrepare.html',
+    html: '<%= config.dev %>/resources/_useminPrepare.html',
     options: {
         dest: '<%= config.dist %>'
     }

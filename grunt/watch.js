@@ -43,7 +43,8 @@ module.exports = {
     },
     //zetzer: {
     //    files: [
-    //        '<%= config.src %>/*.html',
+    //        '<%= config.src %>/site/*.html',
+    //        '<%= config.src %>/resources/_useminPrepare.html',
     //        '<%= config.src %>/_zetzer/**/*.html'
     //    ],
     //    tasks: ['zetzer'],
@@ -53,7 +54,8 @@ module.exports = {
     //},
     assemble: {
         files: [
-            '<%= config.src %>/*.hbs',
+            '<%= config.src %>/site/*.hbs',
+            '<%= config.src %>/resources/_useminPrepare.hbs',
             '<%= config.src %>/_assemble/**/*.hbs'
         ],
         tasks: ['assemble', 'prettify'],

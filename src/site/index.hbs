@@ -1,0 +1,14 @@
+---
+title: 'Index'
+layout: 'offcanvas.hbs'
+---
+
+<ul>
+    {{#each pages}}
+        {{#data}}
+            {{#if post}}
+                <li><a href="{{../../basename}}.html">{{title}} - {{post}}</a></li>
+            {{/if}}
+        {{/data}}
+    {{/each}}
+</ul>
