@@ -49,5 +49,15 @@ module.exports = {
                 expand: true
             }
         ]
+    },
+    fonts: {
+        files: [
+            {
+                cwd: '<%= config.src %>/',
+                dest: '<%= config.dev %>/',
+                src: ['resources/fonts/**'],
+                expand: true
+            }
+        ]
     }
 };

@@ -4,8 +4,29 @@
 /* General mixins */
 @import "mixins/general";
 
+/* Imports from bootstrap v3 */
+@import "../bower/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../bower/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+
+/* Fonts and Glyphicons */
+@import "fonts/opensans";
+@import "fonts/glyphicons";
+
+
+/* Bootstrap grid and responsive utilities */
+@import "../bower/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "../bower/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+
+/* Helpers */
+@import "helpers/responsive";
+
 /* Layouts */
 @import "layouts/default";
+@import "layouts/offcanvas";
+@import "layouts/header";
+@import "layouts/logo";
 
 /* Components */
-@import "components/offcanvas";
+@import "components/transformicons/hamburger";
+@import "components/navigation/navigation";

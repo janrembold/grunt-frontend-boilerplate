@@ -1,0 +1,40 @@
+.logo {
+    text-decoration: none;
+
+    &__image {
+        display: none;
+
+        float: left;
+        width: 100px;
+        height: auto;
+        margin: 0 20px 0 0;
+        border-radius: 50%;
+        box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+
+        @media (min-width: 768px) {
+            display: inline-block;
+
+        }
+    }
+
+    &__name,
+    &__slogan {
+        color: #000;
+        white-space: nowrap;
+    }
+
+    &__name {
+        margin: 20px 0 0;
+        font-size: 30px;
+    }
+
+    &__slogan {
+        margin: 0;
+    }
+
+    .header__wrap & {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+}

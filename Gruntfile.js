@@ -27,6 +27,7 @@
 * rsync
 * grunt-spritesmith
 * file documentation/indexr
+* https://github.com/andismith/grunt-responsive-images
 * */
 
 module.exports = function(grunt) {

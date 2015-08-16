@@ -1,0 +1,11 @@
+.header {
+    background-color: #b5d592;
+    height: 140px;
+
+    &__wrap {
+        @include clearfix();
+
+        position: relative;
+        height: 140px;
+    }
+}
