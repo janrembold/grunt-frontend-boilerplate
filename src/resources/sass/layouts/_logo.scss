@@ -1,40 +1,68 @@
 .logo {
+    display: inline-block;
     text-decoration: none;
+    margin-top: 1.5rem;
+
+    &:hover,
+    &:active,
+    &:focus {
+        outline: 0;
+        text-decoration: none;
+    }
+
+    &:hover {
+        .logo__image {
+            box-shadow: 0 0 16px rgba(0, 0, 0, .8);
+        }
+
+        .logo__name,
+        .logo__slogan {
+            color: $brand-primary;
+        }
+    }
+
+    @include media-breakpoint-up(sm) {
+        margin-left: -8.75rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin-left: -11.25rem;
+    }
 
     &__image {
-        display: none;
-
-        float: left;
-        width: 100px;
+        width: 6.25rem;
         height: auto;
-        margin: 0 20px 0 0;
         border-radius: 50%;
         box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 
-        @media (min-width: 768px) {
-            display: inline-block;
+        @include media-breakpoint-up(sm) {
+            float: left;
+            width: 8.75rem;
+            margin-right: 2rem;
+            margin-bottom: 1rem;
+        }
 
+        @include media-breakpoint-up(lg) {
+            width: 11.25rem;
         }
     }
 
     &__name,
     &__slogan {
-        color: #000;
+        color: $gray;
         white-space: nowrap;
     }
 
     &__name {
-        margin: 20px 0 0;
-        font-size: 30px;
-    }
+        font-size: 2rem;
+        margin: 0.5rem 0 -0.5rem;
 
-    &__slogan {
-        margin: 0;
-    }
+        @include media-breakpoint-up(sm) {
+            margin-top: 2.25rem;
+        }
 
-    .header__wrap & {
-        position: absolute;
-        top: 20px;
-        left: 20px;
+        @include media-breakpoint-up(lg) {
+            margin-top: 3.125rem;
+        }
     }
 }

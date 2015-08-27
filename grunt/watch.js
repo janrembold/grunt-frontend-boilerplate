@@ -65,7 +65,10 @@ module.exports = {
     },
     sass: {
         files: ['<%= config.src %>/resources/sass/**/*.scss'],
-        tasks: ['sass', 'autoprefixer'],
+        tasks: ['sass', 'autoprefixer']
+    },
+    css: {
+        files: ['<%= config.dev %>/resources/css/**/*.css'],
         options: {
             livereload: true
         }

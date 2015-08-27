@@ -4,11 +4,6 @@ html, body {
 }
 
 html {
-    font-family: 'Open Sans', Arial;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: (18/15);
-
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
@@ -22,4 +17,6 @@ html {
 
 .content {
     @include clearfix();
+
+    min-height: 3000px;
 }

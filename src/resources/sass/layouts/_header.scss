@@ -1,11 +1,26 @@
+$header-sticky-height: 72px;
+$header-sticky-z-index: 9999;
+
 .header {
-    background-color: #b5d592;
-    height: 140px;
+    &__sticky {
+        @include media-breakpoint-up(md) {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: $header-sticky-z-index;
+        }
 
-    &__wrap {
-        @include clearfix();
+        height: $header-sticky-height;
+        background-color: $body-bg;
+        box-shadow: 0 1px 5px rgba(190, 190, 190, 0.46);
+    }
 
-        position: relative;
-        height: 140px;
+    &__logo {
+        text-align: center;
+
+        @include media-breakpoint-up(md) {
+            padding-top: $header-sticky-height;
+        }
     }
 }

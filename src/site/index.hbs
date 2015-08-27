@@ -3,12 +3,17 @@ title: 'Index'
 layout: 'offcanvas.hbs'
 ---
 
-<ul>
-    {{#each pages}}
-        {{#data}}
-            {{#if post}}
-                <li><a href="{{../../basename}}.html">{{title}} - {{post}}</a></li>
-            {{/if}}
-        {{/data}}
-    {{/each}}
-</ul>
+<div class="container-fluid">
+    <div class="col-xs-12">
+        <h1>H1 in col-xs-12</h1>
+    </div>
+    <ul>
+        {{#each pages}}
+            {{#data}}
+                {{#if post}}
+                    <li><a href="{{../../basename}}.html">{{title}} - {{post}}</a></li>
+                {{/if}}
+            {{/data}}
+        {{/each}}
+    </ul>
+</div>

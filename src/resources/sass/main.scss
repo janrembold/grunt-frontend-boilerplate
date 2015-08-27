@@ -1,25 +1,68 @@
-/* Global settings*/
-@import "settings";
-
-/* General mixins */
-@import "mixins/general";
-
-/* Imports from bootstrap v3 */
-@import "../bower/bootstrap-sass/assets/stylesheets/bootstrap/variables";
-@import "../bower/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
-
+/* Global and bootstrap variables */
+@import "bootstrap-variables";
+@import "variables";
 
 /* Fonts and Glyphicons */
 @import "fonts/opensans";
 @import "fonts/glyphicons";
 
+/****** BOOTSTRAP v4 ******/
 
-/* Bootstrap grid and responsive utilities */
-@import "../bower/bootstrap-sass/assets/stylesheets/bootstrap/grid";
-@import "../bower/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+// Core variables and mixins
+//@import "../bower/bootstrap/scss/variables";
+@import "../bower/bootstrap/scss/mixins";
 
-/* Helpers */
-@import "helpers/responsive";
+// // Reset and dependencies
+@import "../bower/bootstrap/scss/normalize";
+//@import "../bower/bootstrap/scss/print";
+
+// Core CSS
+@import "../bower/bootstrap/scss/reboot";
+//@import "../bower/bootstrap/scss/type";
+//@import "../bower/bootstrap/scss/images";
+//@import "../bower/bootstrap/scss/code";
+@import "../bower/bootstrap/scss/grid";
+//@import "../bower/bootstrap/scss/tables";
+//@import "../bower/bootstrap/scss/forms";
+//@import "../bower/bootstrap/scss/buttons";
+
+// // Components
+//@import "../bower/bootstrap/scss/animation";
+//@import "../bower/bootstrap/scss/dropdown";
+//@import "../bower/bootstrap/scss/button-group";
+//@import "../bower/bootstrap/scss/input-group";
+//@import "../bower/bootstrap/scss/custom-forms";
+//@import "../bower/bootstrap/scss/nav";
+//@import "../bower/bootstrap/scss/navbar";
+//@import "../bower/bootstrap/scss/card";
+//@import "../bower/bootstrap/scss/breadcrumb";
+//@import "../bower/bootstrap/scss/pagination";
+//@import "../bower/bootstrap/scss/pager";
+//@import "../bower/bootstrap/scss/labels";
+//@import "../bower/bootstrap/scss/jumbotron";
+//@import "../bower/bootstrap/scss/alert";
+//@import "../bower/bootstrap/scss/progress";
+//@import "../bower/bootstrap/scss/media";
+//@import "../bower/bootstrap/scss/list-group";
+//@import "../bower/bootstrap/scss/responsive-embed";
+//@import "../bower/bootstrap/scss/close";
+
+// Components w/ JavaScript
+//@import "../bower/bootstrap/scss/modal";
+//@import "../bower/bootstrap/scss/tooltip";
+//@import "../bower/bootstrap/scss/popover";
+//@import "../bower/bootstrap/scss/carousel";
+
+// Utility classes
+@import "../bower/bootstrap/scss/utilities";
+//@import "../bower/bootstrap/scss/utilities-spacing";
+//@import "../bower/bootstrap/scss/utilities-responsive";
+
+/****** END BOOTSTRAP v4 ******/
+
+
+
+/****** CUSTOM STYLES ******/
 
 /* Layouts */
 @import "layouts/default";
@@ -30,3 +73,4 @@
 /* Components */
 @import "components/transformicons/hamburger";
 @import "components/navigation/navigation";
+@import "components/navigation/icon";

@@ -18,7 +18,7 @@ module.exports = {
     useminPrepare: {
         files: [{
             cwd: '<%= config.src %>/resources/',
-            dest: '<%= config.dev %>/',
+            dest: '<%= config.dev %>/resources/',
             src: ['*.hbs'],
             expand: true
         }]

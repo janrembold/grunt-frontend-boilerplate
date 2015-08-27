@@ -6,6 +6,6 @@ module.exports = {
         tasks: ['sass', 'handlebars']
     },
     validations: {
-        tasks: ['jshint', 'csslint']
+        tasks: ['jshint'/*, 'csslint'*/]
     }
 };

@@ -6,7 +6,7 @@ $hamburger-bar-thickness: 8px;                    // The thickness of the button
 $hamburger-pad: 0px;                      // The left/right padding between button area and bars.
 $hamburger-bar-space: 12px;                // The spacing between button bars
 $hamburger-transition-duration: 400ms;     // The transition duration
-$hamburger-bar-color: #fff;                // The bar color
+$hamburger-bar-color: $brand-primary;                // The bar color
 
 /**
  * ToDos

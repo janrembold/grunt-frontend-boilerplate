@@ -1,7 +1,7 @@
 module.exports = {
     options: {
         assetsDirs: [
-            '<%= config.prod %>'
+            '<%= config.prod %>/_assets/'
         ]
     },
     html: '<%= config.prod %>/*.html',

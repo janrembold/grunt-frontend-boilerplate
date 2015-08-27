@@ -1,3 +1,4 @@
+$offcanvas-max-width: 767px;
 $offcanvas-area-width: 70%;
 $offcanvas-area-z-index: 1001;
 $offcanvas-exit-z-index: 1002;
@@ -8,31 +9,42 @@ $offcanvas-transition: transform 500ms ease 0s;
 * Styles for (min-)height: 100% or better 100vh
 */
 
+
 .offcanvas {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
+
+    @media (max-width: $offcanvas-max-width) {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
 
     &__inner {
-        position: relative;
-        transition: $offcanvas-transition;
-        transform: translate3d(0,0,0);
+        @media (max-width: $offcanvas-max-width) {
+            position: relative;
+            transition: $offcanvas-transition;
+            transform: translate3d(0, 0, 0);
+        }
     }
 
     &__area {
         &--left,
         &--right {
-            position: absolute;
-            width: $offcanvas-area-width;
-            bottom: 0;
-            top: 0;
-            overflow-x: hidden;
-            overflow-y: auto;
-            transition: $offcanvas-transition;
-            z-index: $offcanvas-area-z-index;
+            display: none;
 
-            background-color: #ccc;
+            @media (max-width: $offcanvas-max-width) {
+                position: absolute;
+                display: block;
+                width: $offcanvas-area-width;
+                bottom: 0;
+                top: 0;
+                overflow-x: hidden;
+                overflow-y: auto;
+                transition: $offcanvas-transition;
+                z-index: $offcanvas-area-z-index;
+
+                background-color: #ccc;
+            }
         }
 
         &--left {

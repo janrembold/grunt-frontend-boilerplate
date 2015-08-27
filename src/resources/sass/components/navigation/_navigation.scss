@@ -1,42 +1,59 @@
 .navigation {
-    &__mobile {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        text-decoration: none;
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 $grid-gutter-width;
 
-        @media (min-width: 768px) {
+    &__mobile {
+        float: left;
+        margin-top: 12px;
+
+        @include media-breakpoint-up(md) {
             display: none;
         }
     }
 
-    &__desktop {
-        display: none;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        margin: 0;
+    &__top {
+        float: left;
+        margin: 24px 0 0;
+        padding: 0;
+        list-style: none;
+
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+
+        > li {
+            float: left;
+            margin-left: 24px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            a {
+                display: block;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__social {
+        float: right;
+        margin: 12px 0 0;
         padding: 0;
         list-style: none;
 
         > li {
-            display: table-cell;
-            vertical-align: middle;
-            //float: left;
-            //width: auto;
-            //height: 100%;
-            border-left: 1px solid #000;
+            float: left;
+            margin-left: 12px;
+
+            &:first-child {
+                margin-left: 0;
+            }
 
             a {
-                //display: block;
-                //height: 100%;
+                display: block;
             }
-        }
-
-        @media (min-width: 768px) {
-            display: table;
         }
     }
 }
