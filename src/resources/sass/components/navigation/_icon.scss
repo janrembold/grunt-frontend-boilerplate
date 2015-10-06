@@ -1,22 +1,14 @@
-$icon-shrinked-size: 36px;
-$icon-original-size: 48px;
+$icon-size: 36px;
 
 .icon {
-    width: $icon-shrinked-size;
-    height: $icon-shrinked-size;
-    background-size: $icon-shrinked-size;
+    width: $icon-size;
+    height: $icon-size;
+    background-size: $icon-size;
     border-radius: 50%;
-
     text-indent: -9999px;
 
-    @include media-breakpoint-up(sm) {
-        width: $icon-original-size;
-        height: $icon-original-size;
-        background-size: $icon-original-size;
-    }
-
     &:hover {
-        box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+        box-shadow: 0 0 4px rgba(0, 0, 0, .8);
     }
 
     &:last-child {

@@ -6,8 +6,8 @@ base:
   - 'copy:bower'
   - 'concurrent:compiles'
   - 'autoprefixer'
-#  - 'zetzer:server'
-  - 'assemble'
+  - 'zetzer:server'
+#  - 'assemble'
   - 'prettify'
   - 'concurrent:validations'
 

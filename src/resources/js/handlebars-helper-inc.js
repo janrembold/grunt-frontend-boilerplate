@@ -16,6 +16,7 @@ module.exports.register = function (Handlebars, options, params)  {
     var fs       = require('fs');
     var path     = require('path');
     var includes = options.includes || [''];
+    var templateCache = {};
 
     var extend = function(out) {
         out = out || {};
@@ -33,19 +34,26 @@ module.exports.register = function (Handlebars, options, params)  {
         return out;
     };
 
+    var getCached = function(id, content) {
+        if(typeof(templateCache[id]) === 'undefined') {
+            templateCache[id] = Handlebars.compile(content);
+        }
+
+        return templateCache[id];
+    };
+
     Handlebars.registerHelper('inc', function (file, opts)  {
         // read template file from include path
         for (var i=0; i<includes.length; i++) {
             try {
                 var templatePath = path.join(includes[i], file);
                 var content = fs.readFileSync(templatePath, 'utf8');
-                var template = Handlebars.compile(content);
+                var template = getCached(templatePath, content);
 
                 // extend context
                 var context = extend({}, this, params.grunt.config.data, opts.hash);
                 context = params.grunt.config.process(context);
 
-                console.log('include partial from '+templatePath);
                 return new Handlebars.SafeString( template(context) );
             } catch (e) {}
         }

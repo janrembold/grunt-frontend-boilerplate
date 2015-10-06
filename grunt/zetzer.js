@@ -16,7 +16,7 @@ module.exports = {
         files: [
             {
                 expand: true,
-                cwd: '<%= config.src %>/',
+                cwd: '<%= config.src %>/site-zetzer/',
                 src: '*.html',
                 dest: '<%= config.dev %>',
                 flatten: false

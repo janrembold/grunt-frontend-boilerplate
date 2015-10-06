@@ -1,11 +1,12 @@
 module.exports = {
     options: {
-        assets: '<%= config.src %>/_assets',
-        helpers: ['handlebars-helpers', 'src/resources/js/handlebars-helper-inc.js'],
-        partials: ['<%= config.src %>/_assemble/partials/**/*.hbs'],
+        assets:    '<%= config.src %>/_assets',
+        helpers:   ['handlebars-helpers', 'src/resources/js/handlebars-helper-inc.js'],
+        partials:  ['<%= config.src %>/_assemble/partials/**/*.hbs'],
         layoutdir: '<%= config.src %>/_assemble/layouts/',
-        data: ['<%= config.src %>/_assemble/data/*.{json,yml}'],
-        includes: ['<%= config.src %>/_assemble/includes/']
+        layout:    'offcanvas.hbs',
+        data:      ['<%= config.src %>/_assemble/data/*.{json,yml}'],
+        includes:  ['<%= config.src %>/_assemble/includes/']
     },
     site: {
         files: [{

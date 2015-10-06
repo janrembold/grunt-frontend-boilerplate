@@ -1,19 +1,23 @@
 ---
 title: 'Index'
-layout: 'offcanvas.hbs'
 ---
 
 <div class="container-fluid">
     <div class="col-xs-12">
         <h1>H1 in col-xs-12</h1>
+        <p>Some Text goes her. Default p</p>
+        <ul>
+            {{#each pages}}
+                {{#data}}
+                    {{#if post}}
+                        <li><a href="{{../../basename}}.html">{{title}} - {{post}}</a></li>
+                    {{/if}}
+                {{/data}}
+            {{/each}}
+        </ul>
+        <pre><code class="language-css">
+p { color: red }
+h1 { background-color: #345678; }</code></pre>
     </div>
-    <ul>
-        {{#each pages}}
-            {{#data}}
-                {{#if post}}
-                    <li><a href="{{../../basename}}.html">{{title}} - {{post}}</a></li>
-                {{/if}}
-            {{/data}}
-        {{/each}}
-    </ul>
+
 </div>
